@@ -14,7 +14,6 @@ import Firebase
 @main
 
 struct opinionApp: App {
-    
 //    var sharedModelContainer: ModelContainer = {
 //        let schema = Schema([
 //            Item.self,
