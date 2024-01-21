@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C8902072B5CF044008DF461 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8902062B5CF044008DF461 /* LoadingView.swift */; };
+		4C89020A2B5CF3FD008DF461 /* SwiftfulLoadingIndicators in Frameworks */ = {isa = PBXBuildFile; productRef = 4C8902092B5CF3FD008DF461 /* SwiftfulLoadingIndicators */; };
 		4CD440792B5C433F004EEEC8 /* opinionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD440782B5C433F004EEEC8 /* opinionApp.swift */; };
 		4CD4407F2B5C4341004EEEC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4407E2B5C4341004EEEC8 /* Assets.xcassets */; };
 		4CD440822B5C4341004EEEC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD440812B5C4341004EEEC8 /* Preview Assets.xcassets */; };
@@ -43,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C8902062B5CF044008DF461 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4CD440752B5C433F004EEEC8 /* opinion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opinion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD440782B5C433F004EEEC8 /* opinionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = opinionApp.swift; sourceTree = "<group>"; };
 		4CD4407E2B5C4341004EEEC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD440AA2B5C4C43004EEEC8 /* Auth0 in Frameworks */,
+				4C89020A2B5CF3FD008DF461 /* SwiftfulLoadingIndicators in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +127,7 @@
 				4CD4407E2B5C4341004EEEC8 /* Assets.xcassets */,
 				4CD440802B5C4341004EEEC8 /* Preview Content */,
 				4CD9B1162B5C6A71009A7FF8 /* Launch Screen.storyboard */,
+				4C8902062B5CF044008DF461 /* LoadingView.swift */,
 			);
 			path = opinion;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			name = opinion;
 			packageProductDependencies = (
 				4CD440A92B5C4C43004EEEC8 /* Auth0 */,
+				4C8902092B5CF3FD008DF461 /* SwiftfulLoadingIndicators */,
 			);
 			productName = opinion;
 			productReference = 4CD440752B5C433F004EEEC8 /* opinion.app */;
@@ -260,6 +266,7 @@
 			mainGroup = 4CD4406C2B5C433F004EEEC8;
 			packageReferences = (
 				4CD440A82B5C4C43004EEEC8 /* XCRemoteSwiftPackageReference "Auth0" */,
+				4C8902082B5CF3FD008DF461 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */,
 			);
 			productRefGroup = 4CD440762B5C433F004EEEC8 /* Products */;
 			projectDirPath = "";
@@ -311,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD9B11B2B5C7599009A7FF8 /* QuestionView.swift in Sources */,
+				4C8902072B5CF044008DF461 /* LoadingView.swift in Sources */,
 				4CD9B1332B5CA7C3009A7FF8 /* AnswerView.swift in Sources */,
 				4CD440792B5C433F004EEEC8 /* opinionApp.swift in Sources */,
 			);
@@ -658,6 +666,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4C8902082B5CF3FD008DF461 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
 		4CD440A82B5C4C43004EEEC8 /* XCRemoteSwiftPackageReference "Auth0" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/auth0/Auth0.swift";
@@ -669,6 +685,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4C8902092B5CF3FD008DF461 /* SwiftfulLoadingIndicators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C8902082B5CF3FD008DF461 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */;
+			productName = SwiftfulLoadingIndicators;
+		};
 		4CD440A92B5C4C43004EEEC8 /* Auth0 */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4CD440A82B5C4C43004EEEC8 /* XCRemoteSwiftPackageReference "Auth0" */;

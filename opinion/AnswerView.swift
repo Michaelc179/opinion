@@ -9,7 +9,7 @@ import SwiftUI
 //import SwiftData
 
 struct AnswerView: View {
-    @State private var currentQuestion: String = "BLAH BLAH BLAH" // change to firebase axios
+    @State private var currentQuestion: String = "Share a personal goal you're currently working towards, and what motivates you" // change to firebase axios
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 10) {
@@ -22,15 +22,19 @@ struct AnswerView: View {
                         .padding(.vertical, 10)
                         .frame(maxWidth: .infinity, alignment: .bottomLeading)
                 }
-                HStack(alignment: .center, spacing: 10) {
+                HStack(alignment: .top, spacing: 10) {
                     Text(currentQuestion)
+                        .multilineTextAlignment(.leading)
                         .font(Font.custom("PT Serif", size: 25))
-                        .foregroundColor(Color(red: 0.06, green: 0.06, blue: 0.06))
+                        .foregroundColor(Color(red: 1, green: 0.97, blue: 0.91))
+//                        .foregroundColor(Color(red: 0.06, green: 0.06, blue: 0.06))
                         .frame(maxWidth: .infinity, alignment: .topLeading)
                 }
                 .padding(.leading, 30)
                 .padding(.vertical, 10)
-                .background(Color(red: 1, green: 0.97, blue: 0.91))
+//                .background(Color(red: 1, green: 0.97, blue: 0.91))
+                .background(Color(red: 0.06, green: 0.06, blue: 0.06))
+
 
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(alignment: .leading) {
@@ -50,8 +54,8 @@ struct AnswerView: View {
 }
 
 struct ResponseComponent: View {
-    @State private var Emoji: String = ""
-    @State private var Response: String = ""
+    @State private var Emoji: String = "🥳"
+    @State private var Response: String = "buhhh"
     @State private var isLiked = false
 
     var body: some View {
@@ -75,12 +79,13 @@ struct ResponseComponent: View {
                 // Use an image or label to indicate that the button is a "like" button
                 Image(systemName: self.isLiked ? "heart.fill" : "heart")
 //                Text(isLiked ? "Liked" : "Like")
-            }.buttonStyle(.bordered)
+            }/*.buttonStyle(.bordered)*/
                 .tint(.pink)
         }.onTapGesture(count: 2) {
             print("Double tapped!")
             self.isLiked.toggle()
-        }
+        }.sensoryFeedback(.impact(weight: .heavy, intensity: 10), trigger: self.isLiked)
+
     }
 }
 

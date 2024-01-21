@@ -40,7 +40,7 @@ struct QuestionView: View {
                     
                 }
             } else {
-                AnswerView()
+                LoadingView()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color(red: 0.06, green: 0.06, blue: 0.06))
         }
