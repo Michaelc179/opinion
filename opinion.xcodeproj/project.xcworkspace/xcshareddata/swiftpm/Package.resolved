@@ -136,12 +136,6 @@
       }
     },
     {
-      "identity" : "swiftfulloadingindicators",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators.git",
-      "state" : {
-        "revision" : "85858c0246dcd781228301f9928519f75ce89758",
-        "version" : "0.0.4"
       "identity" : "swift-protobuf",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-protobuf.git",
