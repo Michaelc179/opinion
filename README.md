@@ -1,3 +1,5 @@
+# Opinions
+
 Opinions. Get a daily dose of thought-provoking discussion and debate around controversial or intriguing questions. Engage and connect with others as you share your views and like others' responses.
 
 ## Inspiration
