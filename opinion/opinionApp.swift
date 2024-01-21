@@ -9,9 +9,12 @@
 
 import SwiftUI
 import SwiftData
+import Firebase
 
 @main
+
 struct opinionApp: App {
+    
 //    var sharedModelContainer: ModelContainer = {
 //        let schema = Schema([
 //            Item.self,
@@ -24,11 +27,16 @@ struct opinionApp: App {
 //            fatalError("Could not create ModelContainer: \(error)")
 //        }
 //    }()
-
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
+        
         WindowGroup {
             QuestionView()
         }
 //        .modelContainer(sharedModelContainer)
     }
+    
+    
 }
