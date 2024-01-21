@@ -12,6 +12,7 @@ import SwiftData
 
 @main
 struct opinionApp: App {
+//    @State var currentQuestion: String = "BLAH BLAH BLA"
 //    var sharedModelContainer: ModelContainer = {
 //        let schema = Schema([
 //            Item.self,
